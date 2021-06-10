@@ -1,0 +1,14 @@
+---
+- name: Build environment
+  hosts: db
+  become: yes
+
+  roles:
+   - build
+
+- name: Prod environment
+  hosts: web
+  become: yes
+
+  roles:
+   - prod

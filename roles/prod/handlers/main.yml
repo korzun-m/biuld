@@ -1,0 +1,4 @@
+---
+# handlers file for prod
+- name: Ensure tomcat service is started
+    service: name=tomcat9 state=started

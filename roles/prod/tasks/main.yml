@@ -1,0 +1,10 @@
+---
+# tasks file for prod
+- name: Ensure tomcat package is present
+    apt:
+      name: tomcat9
+      state: present
+
+- name: Copy build
+    copy:
+      src: /tmp/hello-1.0.war
